@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>楚胜汽车集团 | 特种车辆制造商 | Factory Direct</title>
+
+    <style>
+        :root {
+            --brand: #c40000;
+            --text: #222;
+            --bg: #ffffff;
+            --gray: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+        }
+
+        /* 顶部导航栏 */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background: var(--brand);
+            color: white;
+        }
+
+        .navbar img {
+            height: 48px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 16px;
+        }
+
+        .hero {
+            padding: 80px 20px;
+            background: #0047c3;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* 产品展示 */
+        .products {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* 联系方式 */
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f5f5f5;
+        }
+
+        .contact button {
+            background: #25d366;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: var(--gray);
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <img src="logo.jpg" alt="楚胜汽车">
+        <div class="nav-links">
+            <a href="#products">产品展示</a>
+            <a href="#contact">联系我们</a>
+            <a href="#about">公司介绍</a>
+        </div>
+    </header>
+
+    <!-- 顶部横幅 -->
+    <section class="hero">
+        <h1>Welcome to Chusheng Vehicle Factory</h1>
+        <p>We manufacture aerial trucks, tankers, mixers, dump trucks, wrecker trucks, water trucks.</p>
+    </section>
+
+    <!-- 产品展示 -->
+    <section id="products" class="products">
+        <h2>产品展示 Products</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="https://i.imgur.com/UO2G8la.jpeg">
+                <h3>高空作业车</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/yvT1Q0a.jpeg">
+                <h3>油罐车</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/y9Bgsm1.jpeg">
+                <h3>混凝土搅拌车</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/oV5pYjN.jpeg">
+                <h3>自卸车</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/ZpAeFgI.jpeg">
+                <h3>清障车</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/H7noYkJ.jpeg">
+                <h3>洒水车</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <h2>联系我们 Contact Us</h2>
+        <p>Whatsapp 咨询，获取最新报价与车辆信息。</p>
+
+        <button onclick="window.open('https://wa.me/8613227222276','_blank')">
+            联系我们 · WhatsApp
+        </button>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="products">
+        <h2>公司介绍 About Us</h2>
+        <p style="text-align:center; max-width:900px; margin:auto; font-size:18px; line-height:1.6;">
+            楚胜汽车集团是中国知名特种车辆制造商，主营高空作业车、油罐车、混凝土搅拌车、自卸车、洒水车、清障车。
+            支持 OEM、定制生产、出口服务，工厂直销，全球供货。
+        </p>
+    </section>
+
+    <footer>
+        © 2025 楚胜汽车集团 - Chusheng Special Vehicle Manufacturing
+    </footer>
+
+</body>
+</html>
